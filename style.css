@@ -1,0 +1,135 @@
+body {
+  font-family: 'Open Sans';
+  background-color: white;
+  font-smooth: always;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Open Sans';
+  font-variant: small-caps;
+  color: #960707;
+  border-bottom: 1px solid #5E0B15;
+}
+
+h1 > i, h2 > i, h3 > i, h4 > i, h5 > i, h6 > i {
+  color: #B71C1C;
+}
+
+a {
+  font-family: 'Open Sans';
+  color: #5E0B15;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-weight: 600;
+  border-bottom: 1px solid #5E0B15;
+  padding: 0px 3px 0px 3px;
+  transition: all 0.5s ease-in;
+}
+
+a:hover {
+  border-radius: 3px;
+  background-color: #B71C1C;
+  color: white;
+  border-bottom: 1px transparent;
+}
+
+li {
+  list-style-type: disc;
+  color: #B71C1C;
+  margin-bottom: 5px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 75px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #b71c1c;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar div {
+  color: white;
+  font-family: Montserrat;
+  font-variant:  small-caps;
+}
+
+.sidebar > div:first-of-type {
+  font-size: 1.6rem;
+}
+
+.sidebar > div:last-of-type {
+  font-size: 0.7rem;
+  font-variant: normal;
+  padding: 5px;
+  padding-bottom: 3vh;
+  text-align: center;
+  display: none;
+}
+
+.sidebar div a {
+  color: white;
+  border-bottom: 0px;
+  font-weight: 700;
+}
+
+.sidebar div a:hover {
+  background-color: #b71c1c;
+}
+
+.rotate {
+  background-color: #FFFF00;
+  transform: rotate(-90deg);
+}
+
+.rotate .inner {
+  position: absolute;
+  top: -15px;
+  left: -200%;
+}
+
+.sidebar div .postfix {
+  color: #f44336;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-top: 2vw;
+}
+
+.tab div {
+  width: 100%;
+  padding-right: 2vw;
+  display: block;
+}
+
+.tab div li {
+  color: #B71C1C;
+}
+
+.tab div img {
+  margin: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .tab {
+    display: table;
+  }
+
+  .tab div {
+    width: 30vw;
+    display: table-cell;
+  }
+
+  .sidebar > div:last-of-type {
+    display: block;
+  }
+}
+
